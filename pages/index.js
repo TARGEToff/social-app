@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Header } from "components/Header";
+import { signInWith } from "client";
 
 export default function LogIn() {
     return (
@@ -10,8 +11,8 @@ export default function LogIn() {
             </Head>
             <Header />
             <main className="flex flex-col items-center mt-6 w-full flex-1 px-10 text-center">
-                <div className="bg-gray-100 dark:bg-gray-600 rounded-xl h-96 w-96 flex flex-col justify-center items-center">
-                    <button className="text-white bg-blue-500 w-48 h-8 rounded-xl">Sign In with google</button>
+                <div className="bg-gray-100 dark:bg-gray-600 shadow-md rounded-xl h-96 w-96 flex flex-col justify-center items-center">
+                    <button onClick={() => signInWith("google")}className="text-white bg-blue-500 w-48 h-8 rounded-xl">Sign In with google</button>
                 </div>
             </main>
         </div>

@@ -20,7 +20,7 @@ const Header = () => {
                 <span
                     className={`${
                         theme === "dark" ? "translate-x-8" : "translate-x-1"
-                    } w-5 h-5 transform bg-white rounded-full`}
+                    } w-5 h-5 transform bg-white shadow-xl rounded-full`}
                 />
             </Switch>
         </header>
