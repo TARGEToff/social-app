@@ -4,7 +4,7 @@ import { useDarkMode } from "hooks/useDarkMode";
 const Header = () => {
     const [theme, setTheme] = useDarkMode();
     return (
-        <header className="m-6">
+        <header className="m-8">
             <h1 className="text-4xl font-bold dark:text-white">
                 social-app
             </h1>
